@@ -15696,8 +15696,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="D5" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4148"/>
-<part name="D6" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4148"/>
+<part name="D5" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4004"/>
+<part name="D6" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4004"/>
 <part name="D7" library="adafruit" deviceset="DIODE" device="SOD-323F" value="1N4148"/>
 <part name="D8" library="adafruit" deviceset="DIODE" device="SOD-323F" value="1N4148"/>
 <part name="D9" library="adafruit" deviceset="DIODE" device="SOD-323F" value="1N4148"/>
