@@ -168,8 +168,9 @@
    -12V -&gt;</text>
 <text x="57.15" y="38.735" size="1.016" layer="25" font="vector">3x100k</text>
 <text x="92.71" y="38.735" size="1.016" layer="25" font="vector">3x100k</text>
-<text x="36.195" y="1.27" size="1.016" layer="25" font="vector">XOR5 noise generator
-cc-by-sa Lars Bengtsson 20150606 v1.0</text>
+<text x="45.72" y="1.27" size="1.016" layer="25" font="vector">XOR5 noise generator
+cc-by-sa Lars Bengtsson
+20150629 v1.1</text>
 <text x="6.985" y="5.715" size="1.016" layer="26" font="vector" rot="MR90">XOR5 noise generator
 cc-by-sa 2015 Lars Bengtsson</text>
 <text x="76.2" y="2.54" size="10.16" layer="26" font="vector" rot="MR90">XOR5</text>
@@ -2009,6 +2010,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="62.88" y="28.105" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="62.61" y="25.235" size="1.016" layer="27" rot="R90"/>
 </element>
+<element name="R27" library="rcl" package="R0603" value="10k" x="38.1" y="23.495"/>
+<element name="R28" library="rcl" package="R0603" value="10k" x="38.1" y="3.175"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2113,6 +2116,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="34.29" y1="32.385" x2="35.2425" y2="33.3375" width="0.254" layer="1"/>
 <wire x1="10.16" y1="35.56" x2="10.16" y2="30.48" width="0.6096" layer="1"/>
 <wire x1="10.16" y1="30.48" x2="11.29" y2="30.48" width="0.6096" layer="1"/>
+<contactref element="R27" pad="2"/>
+<contactref element="R28" pad="2"/>
+<wire x1="38.95" y1="3.175" x2="40.64" y2="3.175" width="0.254" layer="1"/>
+<via x="40.64" y="3.175" extent="1-16" drill="0.6" shape="square"/>
+<via x="37.465" y="25.4" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="38.95" y1="23.495" x2="38.95" y2="23.915" width="0.254" layer="1"/>
+<wire x1="38.95" y1="23.915" x2="37.465" y2="25.4" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R5" pad="P$2"/>
@@ -2703,11 +2713,17 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="R23" pad="2"/>
 <wire x1="35.14" y1="20.955" x2="37.225" y2="20.955" width="0.254" layer="1"/>
+<contactref element="R27" pad="1"/>
+<wire x1="37.25" y1="23.495" x2="37.25" y2="20.98" width="0.254" layer="1"/>
+<wire x1="37.25" y1="20.98" x2="37.225" y2="20.955" width="0.254" layer="1"/>
 </signal>
 <signal name="N$38">
 <contactref element="R14" pad="2"/>
 <contactref element="C5" pad="2"/>
 <wire x1="35.14" y1="5.715" x2="37.225" y2="5.715" width="0.254" layer="1"/>
+<contactref element="R28" pad="1"/>
+<wire x1="37.25" y1="3.175" x2="37.25" y2="5.69" width="0.254" layer="1"/>
+<wire x1="37.25" y1="5.69" x2="37.225" y2="5.715" width="0.254" layer="1"/>
 </signal>
 <signal name="N$11">
 </signal>
